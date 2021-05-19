@@ -740,6 +740,8 @@ p {
   line-height: 1.87;
 }
 
+/* Modal */
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -778,6 +780,97 @@ p {
   background-color: var(--background-color-primal);
 
   transition: transform var(--transition-time) var(--cubic);
+}
+
+.form-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 40px;
+}
+
+.form-main .form-text {
+  margin-bottom: 12px;
+
+  color: var(--title-text-color);
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+}
+
+.form-main .form-field {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 10px;
+}
+
+.form-main .main-input {
+  width: 448px;
+  height: 40px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.form-main .main-label {
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+}
+
+.form-main .comment {
+  padding: 12px 16px;
+  width: 448px;
+  height: 120px;
+
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+}
+
+.form-main .form-field-comment {
+  margin-bottom: 20px;
+}
+
+.form-main .form-field-checkbox {
+  margin-bottom: 30px;
+}
+
+.form-main .contract {
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.submit-button {
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+
+  font-weight: bold;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--background-color-primal);
+
+  border: none;
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  transition: background-color var(--transition-time) var(--cubic);
+}
+
+.submit-button:hover,
+.submit-button:focus {
+  background-color: var(--button-color);
 }
 
 .modal-button {

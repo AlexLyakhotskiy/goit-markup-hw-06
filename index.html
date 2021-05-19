@@ -485,7 +485,49 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <form class="form">div</form>
+        <form class="form-main">
+          <b class="form-text">Оставьте свои данные, мы вам перезвоним</b>
+          <div class="form-field">
+            <label class="main-label" for="user_name">Имя</label>
+            <input class="main-input" type="text" name="name" id="user_name" />
+          </div>
+          <div class="form-field">
+            <label class="main-label" for="user_tel">Телефон</label>
+            <input class="main-input" type="tel" name="tel" id="user_tel" />
+          </div>
+          <div class="form-field">
+            <label class="main-label" for="user_email">Почта</label>
+            <input
+              class="main-input"
+              type="email"
+              name="email"
+              id="user_email"
+            />
+          </div>
+          <div class="form-field form-field-comment">
+            <label class="main-label" for="user_comment">Комментарий</label>
+            <textarea
+              class="comment"
+              name="comment"
+              id="user_comment"
+              rows="6"
+              placeholder="Введите текст"
+            ></textarea>
+          </div>
+          <div class="form-field-checkbox">
+            <input
+              type="checkbox"
+              name="contract"
+              value="contract"
+              id="user_contract"
+            />
+            <label class="contract" for="user_contract"
+              >Соглашаюсь с рассылкой и принимаю
+              <a class="contract-link">Условия договора</a></label
+            >
+          </div>
+          <button class="submit-button button" type="submit">Отправить</button>
+        </form>
         <button class="modal-button button" type="button" data-modal-close>
           <svg class="modal-icon" width="10" height="10">
             <use href="./images/icons.svg#icon-close"></use>
